@@ -12,12 +12,14 @@ public class ArrayDemo{
 			ar[i] = scan.nextInt();
 		}
 		System.out.println("The contents of the array are");
-		/*for(int i=0; i<n;i++)
+		for(int i=0; i<n;i++)
 		{
 			System.out.printf("%d ",ar[i]);
-		}*/
-		for(int x : ar){
-			System.out.print( x + " ");
 		}
+		int sum = 0;
+		for(int x : ar){
+			sum += x;
+		}
+		System.out.print("Sum is "+sum);
 	}
 }
